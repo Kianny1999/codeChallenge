@@ -13,7 +13,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
         grupo: grupo
     };
 
-    fetch('https://jsonplaceholder.typicode.com/users', {
+    fetch("https://crudcrud.com/api/adc54d7744e946cd8ffc1851accabb6d/grupo275", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,6 +23,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     .then(response => response.json())
     .then(data => {
         console.log('Respuesta del servidor:', data);
+        alert('Enviado con éxito');
     })
     .catch(error => {
         console.error('Error:', error);
